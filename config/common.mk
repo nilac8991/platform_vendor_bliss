@@ -91,6 +91,10 @@ PRODUCT_COPY_FILES += \
     vendor/bliss/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
+# Taskbar Launcher
+PRODUCT_COPY_FILES += \
+    vendor/bliss/prebuilt/common/app/com.farmerbb.taskbar.apk:system/priv-app/Taskbar/com.farmerbb.taskbar.apk
+
 # AdAway App
 PRODUCT_COPY_FILES += \
     vendor/bliss/prebuilt/common/app/AdAway.apk:system/priv-app/AdAway/AdAway.apk
