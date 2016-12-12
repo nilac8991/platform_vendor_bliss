@@ -36,3 +36,8 @@
 # fsck
 /system/bin/fsck\.ntfs                          u:object_r:fsck_exec:s0
 /system/bin/fsck\.exfat                         u:object_r:fsck_exec:s0
+
+#############
+# Superuser's control sockets
+/dev/com.android.settings.daemon(/.*)?   u:object_r:superuser_device:s0
+/dev/com.android.settings(/.*)?   u:object_r:superuser_device:s0
