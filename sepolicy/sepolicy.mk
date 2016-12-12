@@ -4,3 +4,20 @@
 
 BOARD_SEPOLICY_DIRS += \
     vendor/bliss/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    file.te \
+    file_contexts \
+    genfs_contexts \
+    seapp_contexts \
+    service_contexts \
+    auditd.te \
+    healthd.te \
+    installd.te \
+    netd.te \
+    su.te \
+    sysinit.te \
+    system.te \
+    ueventd.te \
+    vold.te \
+    mac_permissions.xml
