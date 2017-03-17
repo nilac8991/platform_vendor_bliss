@@ -22,8 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.use_intro_anim=false \
     ro.build.selinux=1 \
     ro.adb.secure=1 \
-    persist.sys.dun.override=0
-    ro.opa.eligible_device=true
+    persist.sys.dun.override=0 \
+    ro.opa.eligible_device=true 
 
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/bliss/overlay/common
@@ -95,6 +95,11 @@ PRODUCT_COPY_FILES += \
 # Bliss Custom Apps
 PRODUCT_PACKAGES += \
 ThemeInterfacer
+
+# Taskbar & Freeform Windows
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml \
+    $(LOCAL_PATH)/etc/init.d/taskbar_home:system/etc/init.d/taskbar_home
 
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/app/Android.mk)
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/privapp/Android.mk)

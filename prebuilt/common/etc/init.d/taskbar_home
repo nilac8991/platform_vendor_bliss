@@ -1,0 +1,2 @@
+#!/system/bin/sh
+am broadcast --user 0 -a com.farmerbb.taskbar.ENABLE_HOME
