@@ -101,5 +101,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 ThemeInterfacer
 
+# Enable Freeform Windows
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/etc/init.d/ENABLE_HOME:system/etc/init.d/ENABLE_HOME \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml 
+
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/app/Android.mk)
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/privapp/Android.mk)
