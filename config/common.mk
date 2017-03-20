@@ -98,8 +98,7 @@ ThemeInterfacer
 
 # Taskbar & Freeform Windows
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml \
-    $(LOCAL_PATH)/etc/init.d/taskbar_home:system/etc/init.d/taskbar_home
+	frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml 
 
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/app/Android.mk)
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/privapp/Android.mk)
