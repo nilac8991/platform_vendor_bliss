@@ -107,3 +107,6 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/app/Android.mk)
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/privapp/Android.mk)
+
+#ViPER4Arise
+$(call inherit-product-if-exists, vendor/arise/vendor.mk)
