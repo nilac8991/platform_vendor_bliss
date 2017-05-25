@@ -1,5 +1,5 @@
 [gerrit]
-host=review.blissroms.com
-port=29418
+host=review-x86.blissroms.com
+port=29420
 project=platform_vendor_bliss.git
-defaultbranch=n7.1
+defaultbranch=n7.1-su
