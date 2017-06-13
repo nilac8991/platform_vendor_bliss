@@ -114,10 +114,14 @@ PRODUCT_COPY_FILES += \
     vendor/bliss/prebuilt/common/lib64/libbypass.so:system/lib64/libbypass.so
 endif
 
-# Enable Freeform Windows
+# Enable Freeform Window Management
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml 
-
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml
+    
+# Enable Picture-in-picture
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.picture_in_picture.xml:system/etc/permissions/android.software.picture_in_picture.xml
+    
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/app/Android.mk)
 $(call inherit-product-if-exists, vendor/bliss/prebuilt/common/privapp/Android.mk)
 
