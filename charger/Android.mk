@@ -20,8 +20,7 @@ LOCAL_MODULE := libhealthd.bliss
 LOCAL_CFLAGS := -Werror
 LOCAL_C_INCLUDES := \
     system/core/healthd/include \
-    system/core/base/include \
-    bootable/recovery/minui/include
+    bootable/recovery
 ifneq ($(BACKLIGHT_PATH),)
     LOCAL_CFLAGS += -DHEALTHD_BACKLIGHT_PATH=\"$(BACKLIGHT_PATH)\"
 endif
